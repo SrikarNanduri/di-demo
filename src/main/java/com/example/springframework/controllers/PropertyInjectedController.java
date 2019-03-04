@@ -2,6 +2,7 @@ package com.example.springframework.controllers;
 
 import com.example.springframework.services.GreetingServiceImpl;
 
+// This is manual dependency Injection
 public class PropertyInjectedController {
 
 
