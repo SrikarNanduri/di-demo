@@ -6,6 +6,7 @@ public class SetterInjectedController {
 
     private GreetingService greetingService;
 
+    // Here we are setting the service using a setter and then calling the service method.
     public void setGreetingService(GreetingService greetingService) {
         this.greetingService = greetingService;
     }
