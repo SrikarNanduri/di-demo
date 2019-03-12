@@ -2,22 +2,23 @@ package com.example.springframework.controllers;
 
 import com.example.springframework.services.GreetingService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
 // This is manual dependency Injection
 @Controller
-public class SetterInjectedController {
+public class GetterInjectedController {
 
     private GreetingService greetingService;
 
     // Here we are setting the service using a setter and then calling the service method.
     @Autowired
-    void setGreetingService(GreetingService greetingService) {
+    void setGreetingService(@Qualifier("getterGreetingService") GreetingService greetingService) {
         this.greetingService = greetingService;
     }
 
     public  String sayHello(){
-        return greetingService.sayGreeting() + " from SetterInjectedController";
+        return greetingService.sayGreeting() + " from GetterInjectedController";
     }
 
 }

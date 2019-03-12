@@ -3,7 +3,7 @@ package com.example.springframework;
 import com.example.springframework.controllers.ConstructorInjectedController;
 import com.example.springframework.controllers.InitialController;
 import com.example.springframework.controllers.PropertyInjectedController;
-import com.example.springframework.controllers.SetterInjectedController;
+import com.example.springframework.controllers.GetterInjectedController;
 import org.springframework.context.ApplicationContext;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -19,7 +19,7 @@ public class DependencyInjectionDemoApplication {
 
 		initialController.hello();
 		System.out.println(ctx.getBean(PropertyInjectedController.class).sayHello());
-		System.out.println(ctx.getBean(SetterInjectedController.class).sayHello());
+		System.out.println(ctx.getBean(GetterInjectedController.class).sayHello());
 		System.out.println(ctx.getBean(ConstructorInjectedController.class).sayHello());
 
 	}

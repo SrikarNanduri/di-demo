@@ -1,0 +1,5 @@
+@Qualifier:
+
+This is an annotation to tell spring which bean to use for which implementation.
+Consider a situation where we have multiple implementations of a service and the spring is not sure which one to pick up. then we can use @Qualifier annotation.
+Check out this branch where we are using the annotation to inject the right bean when we run the application.
