@@ -13,7 +13,7 @@ public class PropertyInjectedController {
     // Here as you can see we are injecting the Impl of the greeting instead of the interface, This is a bad pratice and this should not be done
     // So we need to add autowired to say spring to wire this.
     @Autowired
-    public GreetingServiceImpl greetingService;
+    GreetingServiceImpl greetingService;
 
     public String sayHello(){
         return greetingService.sayGreeting() + " from PropertyInjectedController";

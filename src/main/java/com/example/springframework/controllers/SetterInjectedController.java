@@ -12,7 +12,7 @@ public class SetterInjectedController {
 
     // Here we are setting the service using a setter and then calling the service method.
     @Autowired
-    public void setGreetingService(GreetingService greetingService) {
+    void setGreetingService(GreetingService greetingService) {
         this.greetingService = greetingService;
     }
 
