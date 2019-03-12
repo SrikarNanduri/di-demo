@@ -7,3 +7,4 @@ The order of repo branches goes like this
 2) Spring-dependency-injection
 3) QualifierImplimentaation(3)
 4) PrimaryAnnotationImpl(4)
+5) SpringBeanLifecycle(5)
